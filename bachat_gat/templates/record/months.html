@@ -1,0 +1,22 @@
+{% extends 'record/base.html' %}
+{% block title %}
+    <title>Months</title>
+    {% endblock %}
+{% block content %}
+    <h1 style='text-align: center;'>Month Wise Record</h1>
+    <table class='table'>
+        <tr>
+            <th>Sr.No</th>
+            <th>Month Name</th>
+            <th>#</th>
+        </tr>
+    {% for data in months %}
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <!-- <td>{{data.id}}</td> -->
+            <td>{{data.month}}</td>
+            <td><a href="{% url 'monthDetails' data.id %}">Full Details</a></td>
+            </tr>
+    {% endfor %}
+    </table>
+{% endblock %}

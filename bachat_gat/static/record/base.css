@@ -1,0 +1,24 @@
+#nav{
+    list-style-type: none;
+    padding: 10px 10px 10px 10px;
+}
+
+li {
+    float:left;
+    padding: 10px 10px 10px 10px;
+}
+
+#navbar{
+    background-color:rgb(228, 231, 11);
+    padding-top:  30px;
+    padding-bottom: 50px;
+}
+
+li a {
+    text-decoration: none;
+    color:tomato;
+    font-weight: bold;
+}
+li a:hover{
+    color:violet;
+}
